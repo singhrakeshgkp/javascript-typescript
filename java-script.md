@@ -1,7 +1,7 @@
 # Table of contents
 
 -  [Variables](#Variables)
-  - [String immutability](#String immutability)
+  - [String immutability](#String-immutability)
   - [Array](#Array)
 - [Function](#function)
 
