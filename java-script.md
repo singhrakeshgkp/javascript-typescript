@@ -1,9 +1,15 @@
 # Table of contents
 
 -  [Variables](#Variables)
+  - [checking type](#checking-type)
+  - [Variable Scope](#variable-scope)
   - [String immutability](#String-immutability)
   - [Array](#Array)
 - [Function](#function)
+- [Operators](#Operators)
+- [Object](#object)
+- [Prevent Object Mutations]
+- [Functions](#functions)
 
 
 
@@ -16,7 +22,7 @@
  let nameOrAge = "rakesh singh"
  const nameOrAge="rsingh"
 ```
-- **check type**
+- **checking type**
   ```
    var msg="";
   if (typeof msg != "undefined")
@@ -44,4 +50,28 @@
 - **Asignment with a returned value**
 
 
+## Operators
+- **==(equality) vs ===(strict equality)** --> if we have two variable lets say ```var a=20, var b= '20'```  ```a==b this statement return true, however a===b return false``` === operator known as strict equality.
+- **!= (inequality) vs !==(strict inequality)** --> strict inequality is oposite to strict equality.
+
+## Object
+### Accessing object properties with using bracket notation
+-  refer ```1-ObjectEx1.html```, run it and check console log.
+### Accessing complex object property
+- refer ```1-objectEx2.html```
+
+## Prevent Object mutation
+- Refer ```2-ObjectMutationEx1.html```
+- Using ```const``` keyword example const msg = "test".
+- Limitation of const --> even if we use keyword ```const``` with array or object we can mutate them, to get rid of this we will use ```freeze```
+
+## Functions
+- refer ```3-FunctionsEx1.html```
+  - Functions with name
+  - Anonymous Function
+  - Arrow Function
+- Higher Order Function -> Higher order function does one of the following things
+   - Takes anothe function as an argument
+   - Return another function as its result.
+  - refer ```3-FunctionEx2.html```
 
