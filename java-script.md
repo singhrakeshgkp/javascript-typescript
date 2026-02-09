@@ -1,18 +1,18 @@
 # Table of contents
+- [Basic](#Basic)
+  -  [Variables](#Variables)
+    - [checking type](#checking-type)
+    - [Variable Scope](#variable-scope)
+    - [String immutability](#String-immutability)
+    - [Array](#Array)
+  - [Function](#function)
+  - [Operators](#Operators)
+  - [Object](#object)
+  - [Prevent Object Mutations]
+  - [Functions](#functions)
+- [Asynchronous](#Asynchronous)
 
--  [Variables](#Variables)
-  - [checking type](#checking-type)
-  - [Variable Scope](#variable-scope)
-  - [String immutability](#String-immutability)
-  - [Array](#Array)
-- [Function](#function)
-- [Operators](#Operators)
-- [Object](#object)
-- [Prevent Object Mutations]
-- [Functions](#functions)
-
-
-
+# Basic
 
 ## Variables
 - we can declare variables three way. 1) using var- Global. 2) let - scoped 3) const - constant
@@ -59,11 +59,15 @@
 -  refer ```1-ObjectEx1.html```, run it and check console log.
 ### Accessing complex object property
 - refer ```1-objectEx2.html```
+### With Object use getter and setter
+- refer ```1-ObjectEx3.html```
+
 
 ## Prevent Object mutation
 - Refer ```2-ObjectMutationEx1.html```
 - Using ```const``` keyword example const msg = "test".
 - Limitation of const --> even if we use keyword ```const``` with array or object we can mutate them, to get rid of this we will use ```freeze```
+
 
 ## Functions
 - refer ```3-FunctionsEx1.html```
@@ -75,3 +79,15 @@
    - Return another function as its result.
   - refer ```3-FunctionEx2.html```
 
+## Destructuring
+- refer ```DestructuringEx1.html```
+
+## Some Common Operation
+- Creating string using template literals
+- Writing concise object literal Declarations using simple Fields
+- write concise declarative function
+- Use a class syntax to define a constructor function
+
+
+# Asynchronous
+- 
