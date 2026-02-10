@@ -90,4 +90,11 @@
 
 
 # Asynchronous
-- 
+- setTimeout is also asynchronous but isse with this is if u have multiple task it might become callback hell (function call tree)
+- Promise
+  ```
+                    |----->resolve---->then--->then--\
+  Promise is Made---|                                 |-------> finally
+                    |----->reject----->catch -----> / 
+  
+  ```
