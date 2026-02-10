@@ -8,7 +8,7 @@
   - [Function](#function)
   - [Operators](#Operators)
   - [Object](#object)
-  - [Prevent Object Mutations](#prevent-object-mutations)
+  - [Prevent Object Mutation](#prevent-object-mutation)
   - [Functions](#functions)
 - [Asynchronous](#Asynchronous)
 
