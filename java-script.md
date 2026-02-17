@@ -10,7 +10,6 @@
   - [Object](#object)
   - [Prevent Object Mutation](#prevent-object-mutation)
   - [Functions](#functions)
-- [Asynchronous](/asynchronous.md)
 
 # Basic
 
