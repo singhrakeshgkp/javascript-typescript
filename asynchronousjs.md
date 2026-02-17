@@ -1,21 +1,28 @@
 # Table of contents
 - [Asynchronous](#Asynchronous)
-  - [setTimeout and Intervals](#setTimeout-and-Intervals)
+  - [Timeout and Intervals](#setTimeout-and-Intervals)
+  - [Recursive Timeout vs Interval](#recursive-timeout-vs-interval)
  
 
 
 
 # Asynchronous
+- java script uses third party library to achieve async behavior 
 ## Timeout and Intervals
+- **Note**:- TimeOut and Interval are not feature of java script, its implemented by browser. setTimeOut and setInterval is name given by java script.
 - **setTimeout** -> executes a particular block of code after the specified time has elasped
   -  Syntax ```setTimeout(function, duration, param1, param2, ....)```
     - First parameter is a function to run, or a reference to a function defined elsewhere.
     - Second parameter is duration.
     - After second parameter we can pass zero or more values that represent any parameters you want to pass to pass function.
   - refer ```01-TimeoutEx1.js```
-- **clear timeout** -> To clear a timeout, you can use clearTimeout function. when callingClearTimeOut you have to pass in identifier returned by setTimeout
+- **clearTimeout** -> To clear a timeout, you can use clearTimeout function. when callingClearTimeOut you have to pass in identifier returned by setTimeout
   - refer ```01-TimeoutEx1.js``` section point 3 in this file.
-- setTimeout is also asynchronous but isse with this is if u have multiple task it might become callback hell (function call tree)
+- **setInterval** -> Keeps the task running forever, it must be clear when appropriate.  
+
+## Recursive Timeout vs Interval
+
+# Promise
 - Promise
   ```
                     |----->resolve---->then--->then--\
