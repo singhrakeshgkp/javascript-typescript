@@ -10,7 +10,7 @@
   - [Object](#object)
   - [Prevent Object Mutation](#prevent-object-mutation)
   - [Functions](#functions)
-- [Asynchronous](#Asynchronous)
+- [Asynchronous](/asynchronous.md)
 
 # Basic
 
@@ -87,14 +87,3 @@
 - Writing concise object literal Declarations using simple Fields
 - write concise declarative function
 - Use a class syntax to define a constructor function
-
-
-# Asynchronous
-- setTimeout is also asynchronous but isse with this is if u have multiple task it might become callback hell (function call tree)
-- Promise
-  ```
-                    |----->resolve---->then--->then--\
-  Promise is Made---|                                 |-------> finally
-                    |----->reject----->catch -----> / 
-  
-  ```
