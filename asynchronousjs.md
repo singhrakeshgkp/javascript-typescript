@@ -58,3 +58,9 @@
 ## Await
 - await only works inside async functions. we use it to pause your code until promise settles and return its result.
 - refer ```06-AsyncAwaitEx2.js```
+
+## Concurrent vs parallel execution
+- refer ```06-AsyncAwaitEx3Sequential.js```
+- refer ```06-AsyncAwaitEx4Concurrent.js```
+- refer ```06-AsyncAwaitEx5Parallel.js```
+
