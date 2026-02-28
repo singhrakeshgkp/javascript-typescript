@@ -6,6 +6,7 @@
   - [Issue with callback](#issue-with-callback)
 - [Promise](#Promise)
 - [Async Await](#async-await)
+ - [Concurrent vs parallel execution](#Concurrent-vs-parallel-execution)
  
 
 
