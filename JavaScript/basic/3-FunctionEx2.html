@@ -1,0 +1,30 @@
+<html>
+
+<body>
+    <h1>Higher Order Function Example </h1>
+</body>
+<script>
+    /* 1.  Higher order function ex1 */
+    function msg() {
+        console.log("welcome to higher order function");
+    }
+
+    function msg2(action) {
+        action();
+    }
+
+    msg2(msg)
+
+    /* 2.  Higher order function ex2 */
+    const increment = (function () {
+        return function increment(number, value = 1) {
+            return number + value;
+        }
+    })();
+
+    console.log(increment(5, 3));
+    console.log(increment(50));
+
+</script>
+
+</html>

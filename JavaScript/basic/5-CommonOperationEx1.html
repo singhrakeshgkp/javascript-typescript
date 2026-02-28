@@ -1,0 +1,80 @@
+<html>
+
+<body>
+    <h1>Common operation </h1>
+</body>
+<script>
+
+    /* 1. Creating Strings using template Literals */
+    var listItemArray = [];
+    var names = ["rakesh", "suresh", "krishna"];
+    for (const name of names) {
+        listItemArray.push(`<li class= "text-warning>${name}</li>`);
+    }
+    console.log(listItemArray);
+
+    /* 2. Writing concise object literal Declarations using simple Fields */
+    // create a function that takes three argument name, age, and class. role of the function is to create a student object and return it.
+
+    const createStudent = (name, age, studentClass) => {
+        return {
+            "name": name,
+            "age": age,
+            "class": studentClass
+        };
+    }
+
+    console.log(createStudent('mayank', "12", "6"));
+
+    // we can simplify return by removing key as here key and variable name is same
+    const createStudent2 = (name, age, studentClass) => ({ name, age, studentClass });  // used body {} in  paranthesis for implicit return
+    console.log(createStudent2("aryaveer", "14", "6"));
+
+    /* 3. write concise declarative function */
+
+    /*     const employee = {
+            name: "rakesh",
+            setName: function (newName) {
+                "use strict";
+                this.name = newName;
+            }
+        }; */
+    // OR
+
+    const employee = {
+        name: "rakesh",
+        setName(newName) { // removed function keyword and : symbol
+            "use strict";
+            this.name = newName;
+        }
+    };
+    console.log(`before setting new name employee data is :- ${JSON.stringify(employee)}`);
+    employee.setName("singh rakesh");
+    console.log(`after setting new name employee data is :- ${JSON.stringify(employee)}`);
+
+
+
+    /* 3 - Use a class syntax to define a constructor function */
+
+    //old way creating class object, here Customer is class
+    var Customer = function (customerName) {
+        this.customerName = customerName;
+    }
+
+    var customerObj1 = new Customer("rakesh singh - customer obj example");
+    console.log(customerObj1.customerName);
+
+    // OR
+
+    // new way of create class 
+    class CustomerEx2 {
+        constructor(customerName) {
+            this.customerName = customerName
+        }
+    }
+
+    var customer2 = new CustomerEx2("this is new way of setting value to class via constructor name is :- rakesh singh");
+    console.log(customer2.customerName);
+</script>
+
+</html>

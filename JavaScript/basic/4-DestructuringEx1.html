@@ -1,0 +1,62 @@
+<html>
+
+<body>
+    <h1>destructuring Example </h1>
+</body>
+<script>
+    var student = {
+        "name": "Mayank",
+        "city": "Gorakhpur",
+        "country": "india"
+    }
+
+    /* 1. Old way of assignment */
+    var name = student.name;
+    var city = student.city;
+    var country = student.country;
+
+    console.log("Student value from old way assignent technique :- ", name, city, country);
+
+    /* 2. New way using destructuring */
+
+    const { name: studentName, city: studentCity, country: studentCountry } = student;  // get name, city, country from student object and assign them to studentName, studentCity and studentCountry variable.
+    console.log("Student value using destructuring :- ", studentName, studentCity, studentCountry)
+
+
+    /* 3. destructuring with nested object */
+    var employeeDetails = {
+        "name": "Rakesh",
+        "address": {
+            "city": "Gorakhpur",
+            "country": "India"
+        }
+    }
+
+    const { address: { city: empCity } } = employeeDetails;
+    console.log("destructuring Nested Object :- ", empCity);
+
+
+    /* 4. Array destructuring */
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const [a, b, , c] = numbers;    //print 1,2,4
+    console.log("destructuring array ex 1 :- ", a, b, c);
+
+    /*  5. Use destructuring to remove first one elements(we could remove first 1,2,3..n elements) using rest operation(...)*/
+    function removeFirst1() {
+        const [, ...arr] = numbers;  // copy all element from numbers to arr except first one.
+        return arr;
+    }
+
+    const arrayAfterRemovingFirst = removeFirst1();
+    console.log("After Removing first element :- ", arrayAfterRemovingFirst);
+
+
+
+    /*  6. Use destructuring assignment to pass an object as a function's parameter. */
+    function getEmployeeNameAndCity({ name, address: { city } }) {
+        return name + " belongs to " + city;
+    }
+    console.log("name is ", getEmployeeNameAndCity(employeeDetails))
+</script>
+
+</html>

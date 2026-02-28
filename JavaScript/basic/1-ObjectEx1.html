@@ -1,0 +1,40 @@
+<html>
+
+<body>
+    <h1>hello </h1>
+</body>
+<script>
+    var employeeObj = {
+        "test": "rakesh",
+        "d": "suresh"
+
+    };
+
+    /* Here 1,2.... is properties, java script automatically convert it in string like "1", "2".."n" */
+
+    /* 1. Accessing data using bracket notation - if propery is integer in that case we can not use employeeObj.1 we have to use bracket notation[]  */
+    console.log(employeeObj["test"])
+    console.log(employeeObj["dd"])
+
+    /* 2. Updating value of object properties */
+    var customerObj = {
+        "name": "rakesh singh",
+        "city": "gorakhpur"
+    }
+
+    console.log("before update", customerObj);
+    customerObj.name = "rsingh";
+    console.log("after update  ", customerObj);
+
+    /* 3. Add new property to object */
+    customerObj.country = "india";
+    console.log("after adding new property country, customer object is ", customerObj);
+
+    /* 4. delete property from object */
+    delete customerObj.country
+    console.log("after deleting country property, customer object is ", customerObj);
+
+
+</script>
+
+</html>

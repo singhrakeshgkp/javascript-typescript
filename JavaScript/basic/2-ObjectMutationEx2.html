@@ -1,0 +1,44 @@
+<html>
+
+<body>
+    <h1>Object Mutations Example </h1>
+</body>
+<script>
+    /* 1. even after using const employee1 object will be mutated here */
+    function mutatedExample() {
+        const employee1 = {
+            "name": "rakesh singh"
+        };
+        try {
+            employee1.name = "suresh"
+        } catch (error) {
+            console.log(error);
+        }
+        return employee1.name;
+    }
+
+    var mutatedName = mutatedExample();
+    console.log("mutated example: employee name is ", mutatedName)
+
+    /* 1. Stop mutation using freeze*/
+
+    function immutableEx() {
+        const employee2 = {
+            "name": "aryaveer"
+        };
+        Object.freeze(employee2)
+
+        try {
+            employee2.name = "new Name employee2"
+        } catch (error) {
+            console.log(error)
+        }
+
+        return employee2.name
+    }
+
+    var employee2Name = immutableEx();
+    console.log("immutable example: employee2 name is ", employee2Name);
+</script>
+
+</html>

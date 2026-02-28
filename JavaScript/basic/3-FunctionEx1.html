@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <h1>Function Example </h1>
+</body>
+<script>
+    /* 1. Function with name */
+    function msg() {
+        return "this is named function";
+    }
+
+    var funWithNameReturnedValue = msg();
+    console.log("function with name, returned value is ", funWithNameReturnedValue);
+    /* 2. anonymous function */
+
+    var returnedValueFromAnonymousFun = function () { return "hi this is anonymous function" };
+    console.log("anonymous function returned value is :- ", returnedValueFromAnonymousFun.apply());
+
+    /* 3. Arrow function */
+
+    var returnedValueFromArrowFun = () => "hi this is arrow function";
+    console.log("arrow function returned value is :- ", returnedValueFromArrowFun.apply());
+
+
+
+</script>
+
+</html>

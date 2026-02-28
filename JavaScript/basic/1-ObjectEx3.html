@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <h1> Other common operations on object </h1>
+</body>
+<script>
+    /* 1. Use getters and setters to control Access to an object */
+    class Employee { // any vriable declared with _ symbol like _name is private variable
+        constructor(name) {
+            this._name = name;
+        }
+
+        get name() {
+            return this._name;
+        }
+
+        set name(name) {
+            this._name = name;
+        }
+
+
+    }
+</script>
+
+</html>

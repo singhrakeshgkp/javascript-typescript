@@ -1,0 +1,64 @@
+<html>
+
+<body>
+    <h1>hello </h1>
+</body>
+<script>
+    /* 1.  Using Objects for lookup. Use case lets say we have multiple key value pair, to evaluate different logic for each key that matches condition we can use switch , same we can achieve using looup */
+    var paymentTypes = {
+        "CC": "Credit Card",
+        "DC": "Debit Card",
+        "UPI": "UPI"
+    };
+
+    var selectedPaymentType = paymentTypes["CC"];
+    console.log(selectedPaymentType);
+
+    /* 2. Testing objects for properties */
+
+    function checkPropInObj(propName) {
+        if (paymentTypes.hasOwnProperty(propName)) {
+            return paymentTypes[propName]
+        } else {
+            return "Prop not found"
+        }
+    }
+
+    console.log(checkPropInObj("CD"));
+
+    /*3.  Manipulating Complext object */
+    var customers = [
+        {
+            "name": "rakesh singh",
+            "address": [
+                {
+                    "city": "gorakhpur",
+                    "full address": "123 abc street"
+                },
+                {
+                    "city": "Parker"
+                }
+            ],
+            "occupation": "software engineer in eHealth"
+        },
+        {
+            "name": "amit singh",
+            "address": [
+                {
+                    "city": "gorakhpur"
+                },
+                {
+                    "city": "delhi"
+                }
+            ],
+            "occupation": "Businessman"
+        }
+    ]
+
+
+    var fullAddress = customers[0].address[0]["full address"];
+    console.log(fullAddress);
+
+</script>
+
+</html>
