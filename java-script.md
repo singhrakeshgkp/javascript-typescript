@@ -29,7 +29,7 @@
   ```
 - **Variable Scope**
   ```
-    function a(){ var msg = "test"} // if var used and variable is inside function of block like for it scope will be limited where it is declared.
+    function a(){ var msg = "test"} // if var used and variable is inside function  block, it scope will be limited where it is declared.
     function b(){msg = "test"} // here we have not used var, so its scope is global we can use it in any other function.
   ```
 - if u have local and global variable with same name, in this case local variable take precedence.
