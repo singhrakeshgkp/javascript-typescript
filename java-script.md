@@ -36,7 +36,7 @@
 - 
 - 
 ### String immutability
-- var msg= "hello workd", msg[0]="G"   (not possible), complete variable value we can change lik msg = "welcome to this session"
+- var msg= "hello world", msg[0]="G"   (not possible), complete variable value we can change lik msg = "welcome to this session"
 
 ### Array
 - to insert element we use ```push()``` and to delete element we use ```pop()```. ```shift()``` mthod we use to remove first element from array
