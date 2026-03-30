@@ -50,7 +50,7 @@
 
 
 ## Operators
-- **==(equality) vs ===(strict equality)** --> if we have two variable lets say ```var a=20, var b= '20'```  ```a==b this statement return true, however a===b return false``` === operator known as strict equality.
+- **==(equality/lose equality) vs ===(strict equality)** --> if we have two variable lets say ```var a=20, var b= '20'```  ```a==b this statement return true, however a===b return false``` === operator known as strict equality. Strict Equality checks both value and type
 - **!= (inequality) vs !==(strict inequality)** --> strict inequality is oposite to strict equality.
 
 ## Object
